@@ -11,7 +11,7 @@
   |         |               |                 |               |                  |
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 */
-typedef enum {
+typedef enum AMF0_TYPE {
     AMF0_NUMBER=0,
     AMF0_BOOL,
     AMF0_STRING,
@@ -34,7 +34,7 @@ typedef enum {
   |         |               |                 |               |                  |
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  */
-typedef enum {
+typedef enum AMF3_TYPE {
    AMF3_UNDEFINED=0,
    AMF3_MULL,
    AMF3_FALSE,
