@@ -10,4 +10,6 @@ typedef enum ENDIAN_TYPE {
 enum ENDIAN_TYPE connection_get_endian_type() { };
 
 
+
+
 #endif /* connection_h */
