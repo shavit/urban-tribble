@@ -11,7 +11,7 @@
   |         |               |                 |               |                  |
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 */
-typedef enum AMF0_TYPE {
+enum AMF0_TYPE {
     AMF0_NUMBER=0,
     AMF0_BOOL,
     AMF0_STRING,
@@ -24,9 +24,9 @@ typedef enum AMF0_TYPE {
     AMF0_END,
 };
 
-int amf0_c0() { };
-int amf0_c1() { };
-int amf0_c2() { };
+int amf0_c0();
+int amf0_c1();
+int amf0_c2();
 
 
 /*
@@ -39,7 +39,7 @@ int amf0_c2() { };
   |         |               |                 |               |                  |
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  */
-typedef enum AMF3_TYPE {
+enum AMF3_TYPE {
    AMF3_UNDEFINED=0,
    AMF3_MULL,
    AMF3_FALSE,
@@ -61,5 +61,7 @@ typedef enum AMF3_TYPE {
 };
 
 int stream_amf0(char* msg);
+
+int decode_amf0(const char* msg, char* buf);
 
 #endif /* amf_h */
