@@ -61,3 +61,9 @@ int resolve_ip(char* host) {
 
   return 0;
 }
+
+struct sockaddr {
+  uint8_t sa_len;
+  sa_family_t sa_family;
+  char sa_data[14];
+}
