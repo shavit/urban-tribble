@@ -62,6 +62,10 @@ enum AMF3_TYPE {
 
 int stream_amf0(char* msg);
 
+int decode_amf(const char* msg, char* buf);
+
 int decode_amf0(const char* msg, char* buf);
+
+int decode_amf3(const char* msg, char* buf);
 
 #endif /* amf_h */
